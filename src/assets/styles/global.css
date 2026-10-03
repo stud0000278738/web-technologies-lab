@@ -9,3 +9,120 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* ===== Текстовые стили ===== */
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+.main-title {
+    font-size: 64px;
+    color: #1F3F68;
+}
+.page-title {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+.section-title {
+    font-size: 36px;
+    text-align: center;
+}
+.subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+/* ===== Поля ввода ===== */
+.input-field {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    padding: 15px 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+/* ===== Кнопка Submit (градиент как на макете) ===== */
+.submit-btn {
+    background: linear-gradient(90deg, #4A6CF7 0%, #9C4DF4 100%);
+    box-shadow: 5px 20px 50px rgba(74, 108, 247, 0.3);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    padding: 18px 50px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.2s;
+    letter-spacing: 1px;
+}
+.submit-btn:hover {
+    box-shadow: 5px 20px 50px rgba(74, 108, 247, 0.6);
+    transform: translateY(-2px);
+}
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 5px 20px 50px rgba(74, 108, 247, 0.3);
+}
+
+/* ===== Форма с фоном ===== */
+.contact-form {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+        url('/src/assets/img/form-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== Хлебные крошки-таблетки ===== */
+.breadcrumbs {
+    margin-top: 20px;
+}
+.breadcrumbs-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #B8D0DC 0%, #5E8F9C 100%);
+    width: fit-content;
+}
+.breadcrumbs-list li {
+    position: relative;
+    padding: 15px 40px;
+    border-right: 2px solid #ffffff;
+}
+.breadcrumbs-list li:last-child {
+    border-right: none;
+}
+.breadcrumbs-list a,
+.breadcrumbs-list .current {
+    color: #1F3F68;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+.breadcrumbs-list a:hover {
+    color: #FFFFFF;
+}
+.breadcrumbs-list .current {
+    font-weight: 700;
+    cursor: default;
+}

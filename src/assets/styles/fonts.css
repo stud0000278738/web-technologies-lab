@@ -1,23 +1,15 @@
+/* Вариативный Inter (все веса 100–900) */
 @font-face {
     font-family: "Inter";
-    src: local('Inter'), local('Inter-Bold'), local('Inter Bold'),
-         url("/static/fonts/Inter-Bold.ttf") format("truetype"),
-         url("/static/fonts/Inter-Bold.woff2") format("woff");
-    font-weight: 700;
+    src: url("/static/fonts/Inter-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
 }
 
+/* Вариативный Inter Italic */
 @font-face {
     font-family: "Inter";
-    src: local('Inter'), local('Inter-Medium'), local('Inter Medium'),
-         url("/static/fonts/Inter-Medium.ttf") format("truetype"),
-         url("/static/fonts/Inter-Medium.woff2") format("woff");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: local('Inter'), local('Inter-Regular'), local('Inter Regular'),
-         url("/static/fonts/Inter-Regular.ttf") format("truetype"),
-         url("/static/fonts/Inter-Regular.woff2") format("woff");
-    font-weight: 400;
+    src: url("/static/fonts/Inter-Italic-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
 }
